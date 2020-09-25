@@ -29,7 +29,7 @@ combineddata <- rbind(labeledtestdata,labeledtrainingdata)
 remove(labeledtestdata)
 remove(labeledtrainingdata)
 
-#filter the data for the wnated columns
+#filter the data for the wanted columns
 #need only my activity label and all columns containing either a mean or a standard variation feature
 filtereddata = combineddata[grep("activitylabel|mean|std",names(combineddata))]
 
